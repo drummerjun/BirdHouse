@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+        <!-- xmlns:android="http://schemas.android.com/apk/res/android" -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <AutoCompleteTextView android:id="@+id/tel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="#1"
+                android:imeOptions="actionDone"
+                android:inputType="phone" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <AutoCompleteTextView android:id="@+id/tel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="#2"
+                android:imeOptions="actionDone"
+                android:inputType="phone" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <AutoCompleteTextView android:id="@+id/tel3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="#3"
+                android:imeOptions="actionDone"
+                android:inputType="phone" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <AutoCompleteTextView android:id="@+id/tel4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="#4"
+                android:imeOptions="actionDone"
+                android:inputType="phone" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <AutoCompleteTextView android:id="@+id/tel5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="#5"
+                android:imeOptions="actionDone"
+                android:inputType="phone" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+</ScrollView>

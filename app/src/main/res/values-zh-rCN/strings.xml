@@ -1,0 +1,233 @@
+<resources>
+    <string name="app_name">智能燕屋</string>
+    <string name="title_birdhouses">状态</string>
+    <string name="title_settings">设定</string>
+    <string name="title_events">事件</string>
+    <string name="action_dateselect">查询</string>
+
+    <!-- Login -->
+    <string name="action_sign_in">登入</string>
+    <string name="error_incorrect_password">密码错误</string>
+    <string name="error_field_required">栏位不可空白</string>
+    <string name="action_logout">登出</string>
+
+    <string name="hint_old_password">旧密码</string>
+    <string name="hint_new_password">新密码</string>
+    <string name="hint_confirm_password">确认新密码</string>
+    <string name="pwd_match_error">新密码有误</string>
+    <string name="pwd_error">密码错误</string>
+    <string name="logout_message">确认登出?</string>
+    <string name="action_account">帐号设定</string>
+    <string name="action_login">更改帐号</string>
+
+    <!-- Settings -->
+    <string name="apply">套用</string>
+    <string name="new_settings">新增</string>
+    <string name="refresh">更新</string>
+    <string name="ammonia_level">氨气警告</string>
+    <string name="switch1">1号开关</string>
+    <string name="switch2">2号开关</string>
+    <string name="humidity_range">湿度范围</string>
+    <string name="track">选择歌曲</string>
+    <string name="volume">音量</string>
+    <string name="vol">音量</string>
+    <string name="humidity">湿度</string>
+    <string name="temperature">温度</string>
+    <string name="nh3">氨气</string>
+
+    <!-- Settings -->
+    <string name="pref_header_general">警报设定</string>
+    <string name="pref_header_switch">开关设定</string>
+    <string name="pref_header_mp3">燕鸣设定</string>
+    <string name="track_tag">设定</string>
+    <string name="schedule_for">持续</string>
+    <string name="hour">小时</string>
+    <string name="hours">小时</string>
+    <string name="minute">分钟</string>
+    <string name="minutes">分钟</string>
+    <string name="song">歌曲</string>
+
+    <string name="pref_title_ammonia_level">氨气警告 (ppm)</string>
+    <string-array name="pref_nh3_list">
+        <item>800</item>
+        <item>900</item>
+        <item>1000</item>
+        <item>1100</item>
+        <item>1200</item>
+        <item>1300</item>
+        <item>1400</item>
+        <item>1500</item>
+    </string-array>
+
+    <string name="pref_title_ir2">防盗设定</string>
+    <string-array name="pref_ir_list_titles">
+        <item>拨打电话</item>
+        <item>简讯通知</item>
+    </string-array>
+    <string name="pref_cat_powerout">断电设定</string>
+    <string name="pref_switch_toggle_humidity">湿度启动</string>
+    <string name="pref_switch_toggle_timed">时程启动</string>
+    <string name="pref_timer_start">开始时间</string>
+    <string name="set">确定</string>
+
+    <string name="pref_title_interval">每 (小时)</string>
+    <string-array name="pref_interval_list">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="pref_duration_list_title">
+        <item>10 分钟</item>
+        <item>20 分钟</item>
+        <item>30 分钟</item>
+        <item>45 分钟</item>
+        <item>1 小时</item>
+        <item>1.5 小时</item>
+        <item>2 小时</item>
+        <item>2.5 小时</item>
+        <item>3 小时</item>
+    </string-array>
+    <string-array name="pref_duration_list_values">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+        <item>150</item>
+        <item>180</item>
+    </string-array>
+
+    <string name="apply_houses">套用设定至...</string>
+    <string-array name="pref_song_list">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+    </string-array>
+    <string name="title_duration">持续时间</string>
+    <string name="allday">全天</string>
+    <string name="custom">自订</string>
+    <string-array name="pref_stoptime_list_title">
+        <item>30 分钟</item>
+        <item>1 小时</item>
+        <item>2 小时</item>
+        <item>6 小时</item>
+        <item>12 小时</item>
+        <item>全天</item>
+        <item>自订</item>
+    </string-array>
+    <string-array name="pref_stoptime_list_value">
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>360</item>
+        <item>720</item>
+        <item>1439</item>
+        <item>0</item>
+    </string-array>
+
+    <string name="tel">通知号码</string>
+    <string name="on">开</string>
+    <string name="off">关</string>
+    <string name="ir1_sms">进出通知</string>
+    <string name="ir1_notify">进出通知</string>
+    <string name="ir2_alarm">防盗警报</string>
+    <string name="ir2_call">电话通知</string>
+    <string name="ir2_sms">简讯通知</string>
+    <string name="ir2_notify">防盗通知</string>
+    <string name="power_off_sms">停电通知</string>
+    <string name="power_back_sms">復电通知</string>
+
+    <string name="apply_all">全选</string>
+    <string name="detected">异常!</string>
+    <string name="normal">正常</string>
+
+    <string name="exit_message">确定退出?</string>
+    <string name="upload_db">音效时程更新</string>
+    <string name="upload_message">储存新的播放设定至云端?</string>
+    <string name="discard">弃置更改</string>
+
+    <string name="error_msg">没有注册的鸟屋或网路异常</string>
+    <string name="logs_all">纪录</string>
+    <string name="house_name">鸟屋名称</string>
+    <string name="no_event">无事件</string>
+    <string name="basic_info">基本资料</string>
+
+    <string name="clock_hour">点</string>
+    <string name="clock_minute">分</string>
+    <string name="upload_title">储存设定</string>
+
+    <string name="event_power_out">断电!</string>
+    <string name="event_power_back">復电</string>
+    <string name="event_nh3">氨气警告</string>
+    <string name="event_intrusion">有人闯入</string>
+    <string name="event_entry">进出通知</string>
+    <string name="event_sw_on">开关开启</string>
+    <string name="event_sw_off">开关关闭</string>
+    <string name="event_humidity">湿度</string>
+    <string name="event_temp">温度</string>
+    <string name="event_count">数量</string>
+
+    <string name="element_sw">开关</string>
+    <string name="element_entry">进出</string>
+    <string name="element_intrusion">防盗</string>
+    <string name="element_power">电力</string>
+    <string name="element_humidity">湿度</string>
+    <string name="element_temp">温度</string>
+    <string name="element_nh3">氨气</string>
+    <string name="element_sum">数量</string>
+    <string name="element_unit_count">隻</string>
+
+    <string name="online">上线</string>
+    <string name="offline">离线</string>
+    <string name="error_network">无法连线</string>
+    <string name="zero_critical">无事件</string>
+    <string name="year">年份</string>
+    <string name="month">月份</string>
+
+    <string name="log_sw">开关</string>
+    <string name="log_entries">进出</string>
+    <string name="log_intrusion">闯入</string>
+    <string name="log_info">环境</string>
+    <string name="log_power">电力</string>
+    <string name="log_count">数量</string>
+
+    <string-array name="shifts_titles">
+        <item>白天 (08:00 \u2014 17:59)</item>
+        <item>晚间 (18:00 \u2014 07:59)</item>
+    </string-array>
+    <string name="sms_tel">简讯电话簿</string>
+</resources>

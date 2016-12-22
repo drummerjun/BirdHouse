@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_change_pwd"
+        android:orderInCategory="100"
+        android:title="@string/action_account"
+        android:icon="@drawable/ic_account_white"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_change_server"
+        android:orderInCategory="100"
+        android:title="@string/action_server"
+        app:showAsAction="never"/>
+</menu>

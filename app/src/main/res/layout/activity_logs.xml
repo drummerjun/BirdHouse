@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.junyenhuang.birdhouse.LogActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/toolbar"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_above="@+id/bottom_controls" />
+        <LinearLayout android:id="@id/bottom_controls"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:foregroundGravity="bottom"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            app:layout_anchorGravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+            <LinearLayout android:id="@+id/hot_button0"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <ImageButton android:id="@+id/hot_button_image_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"/>
+                <!--app:srcCompat="@drawable/selector_apply"/>-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/hot_button_text_0_shadow"
+                    android:text="@string/apply"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginStart="1dp"
+                    android:maxLines="1"
+                    android:clickable="false"/>
+                <TextView android:id="@+id/hot_button_text_0"
+                    android:text="@string/apply"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:clickable="false"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/hot_button1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/hot_button_image_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"/>
+            <!--app:srcCompat="@drawable/selector_refresh"/>-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView android:id="@+id/hot_button_text_1_shadow"
+                android:text="@string/refresh"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="1dp"
+                android:maxLines="1"
+                android:clickable="false"/>
+            <TextView android:id="@+id/hot_button_text_1"
+                android:text="@string/refresh"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:clickable="false"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/hot_button2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/hot_button_image_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"/>
+        <!--app:srcCompat="@drawable/selector_event"/>-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:id="@+id/hot_button_text_2_shadow"
+            android:text="@string/title_events"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="1dp"
+            android:maxLines="1"
+            android:clickable="false"/>
+        <TextView android:id="@+id/hot_button_text_2"
+            android:text="@string/title_events"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:clickable="false"/>
+    </RelativeLayout>
+</LinearLayout>
+<LinearLayout android:id="@+id/hot_button3"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/hot_button_image_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"/>
+    <!--app:srcCompat="@drawable/selector_realtime"/>-->
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView android:id="@+id/hot_button_text_3_shadow"
+        android:text="@string/title_birdhouses"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="1dp"
+        android:maxLines="1"
+        android:clickable="false"/>
+    <TextView android:id="@+id/hot_button_text_3"
+        android:text="@string/title_birdhouses"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:clickable="false"/>
+</RelativeLayout>
+</LinearLayout>
+<LinearLayout android:id="@+id/hot_button4"
+android:layout_width="0dp"
+android:layout_weight="1"
+android:layout_height="wrap_content"
+android:background="@android:color/transparent"
+android:gravity="center"
+android:orientation="vertical">
+<ImageButton android:id="@+id/hot_button_image_4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitCenter"
+    android:adjustViewBounds="true"
+    android:background="@android:color/transparent"/>
+    <!--app:srcCompat="@drawable/selector_logs"/>-->
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView android:id="@+id/hot_button_text_4_shadow"
+        android:text="@string/logs_all"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="1dp"
+        android:maxLines="1"
+        android:clickable="false"/>
+    <TextView android:id="@+id/hot_button_text_4"
+        android:text="@string/logs_all"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:clickable="false"/>
+</RelativeLayout>
+</LinearLayout>
+<LinearLayout android:id="@+id/hot_button5"
+android:layout_width="0dp"
+android:layout_weight="1"
+android:layout_height="wrap_content"
+android:background="@android:color/transparent"
+android:gravity="center"
+android:orientation="vertical">
+<ImageButton
+    android:id="@+id/hot_button_image_5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitCenter"
+    android:adjustViewBounds="true"
+    android:background="@android:color/transparent"/>
+    <!--app:srcCompat="@drawable/selector_setting"/>-->
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView android:id="@+id/hot_button_text_5_shadow"
+        android:text="@string/title_settings"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="1dp"
+        android:maxLines="1"
+        android:clickable="false"/>
+    <TextView android:id="@+id/hot_button_text_5"
+        android:text="@string/title_settings"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:clickable="false"/>
+</RelativeLayout>
+</LinearLayout>
+<LinearLayout android:id="@+id/hot_button6"
+android:layout_width="0dp"
+android:layout_weight="1"
+android:layout_height="wrap_content"
+android:background="@android:color/transparent"
+android:gravity="center"
+android:visibility="gone"
+android:orientation="vertical">
+<ImageButton android:id="@+id/hot_button_image_6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitCenter"
+    android:adjustViewBounds="true"
+    android:background="@android:color/transparent"/>
+    <!--app:srcCompat="@drawable/selector_date"/>-->
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView android:id="@+id/hot_button_text_6_shadow"
+        android:text="@string/action_dateselect"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="1dp"
+        android:maxLines="1"
+        android:clickable="false"/>
+    <TextView android:id="@+id/hot_button_text_6"
+        android:text="@string/action_dateselect"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:clickable="false"/>
+</RelativeLayout>
+</LinearLayout>
+</LinearLayout>
+</RelativeLayout>
+<ProgressBar
+android:id="@+id/loading_progress"
+style="?android:attr/progressBarStyleLarge"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="@dimen/activity_vertical_margin"
+android:layout_marginBottom="8dp"
+android:visibility="gone"
+android:layout_weight="1"
+app:layout_anchorGravity="center_vertical|center_horizontal"
+android:layout_gravity="center_vertical|center_horizontal" />
+</android.support.design.widget.CoordinatorLayout>
